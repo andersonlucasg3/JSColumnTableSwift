@@ -11,8 +11,9 @@ import UIKit
 
 public extension NSLayoutConstraint {
     public class func activateIfNotActive(_ constraints: [NSLayoutConstraint]){
-        let notActive = constraints.filter({!$0.isActive})
-        self.activate(notActive)
+//        let notActive = constraints.filter({!$0.isActive})
+//        self.activate(notActive)
+        self.activate(constraints)
     }
 }
 
